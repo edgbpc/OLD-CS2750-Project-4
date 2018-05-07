@@ -1,0 +1,41 @@
+
+card_t.h
+added enumeration for card values.  This allows me to add the cards to the array by looping through these
+enumerations.  It makes the code easier to decipher what its doing rather then just looping through numbers.
+
+shuffle.c
+the program populates an array of cards as defined by the struct in card_t.h.  
+Added display of the cards before the shuffle only to show that the array was ordered before the shuffle.  
+the function displayDeck was created because displaying the deck was called three times.  Otherwise, assinging the cards to the array and shuffling is done once and thus not necessary to be done in a programmed defined function.  
+**UPDATE: CONVERTED ASSIGNING CARDS TO ARRAY AND SHUFFLING TO FUNCTIONS**
+
+
+The function is lengthly using a number of if, else if statements to assign the card number and suit.  Time depending, I intend to change this to a switch to reduce line of code.    
+**UPDATE: CONVERTED THE IF/ESLE IF INTO SWITCH**
+
+
+sb.c
+This program gave me the most trouble.  I struggled with the bitwise operations. 
+I use the same loop to load the deckofcards array and to display the cards.  I should have made a another file for all function definations so that I didn't have to copy the functions into the second program.  However, as it stands, the functions are duplicated in sb.c.
+Again, the displayDeck function is lengthly and needs to be changed to switch for simplicity.    
+**UPDATE: CONVERTED THE IF/ESLE IF INTO SWITCH**
+
+
+Account.c
+
+This program searches file acct_info by record number and displays account owner and account balance.
+Due to a record existing in the 0 element, my program takes the user input and subtracts one to display the
+intended record.  A lay person requesting a record would not enter 0 expecting to find the 1st record. 
+Therefore, to get the 0 record, the user would input one.  
+
+Assignment specifications do not require a name search therefore this program only searches by name.
+I did add the account name to be displayed but this was also not required.
+Also added display of record number.
+
+
+acct_regex.c
+
+this is the version of account.c that includes the extra credit portion.  It has functuality of the record # search and alpha string search.  I have included both versions in my hand in.
+
+
+
